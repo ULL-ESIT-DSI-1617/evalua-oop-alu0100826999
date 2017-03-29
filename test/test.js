@@ -1,3 +1,4 @@
+// Testing drawIt
 var dt = require("../lyingoutatable.js");
 var drawIt = dt.drawIt;
 
@@ -24,21 +25,18 @@ Vaalserberg       323 Netherlands
 Denali           6168 United States
 Popocatepetl     5465 Mexico       `;
 
-//var col1w = 14, col2w = 6, col3w = 11;
+var col1w = 14, col2w = 6, col3w = 11;
 describe("drawIt", function() {
   it("must draw the mountains table correctly", function() {
-    //var result = drawIt(MOUNTAINS);
+    var result = drawIt(MOUNTAINS);
     /* There is a white space between consecutive columns */
-    //result.should.match(/^(.{14}\s.{6}\s.{13}\s*){11}$/);
-    //reult.should.match(/Montaña mágica\s{20}/);
-    
-    drawIt(MOUNTAINS).should.equal(expected);
+    result.should.match(/^(.{14}\s.{6}\s.{13}\s*){11}$/);
+    result.should.match(/Montaña mágica\s{20}/);
   })
 });
 
-var TC = require('../prueba/TextCell.js');
-var TextCell = TC.TextCell;
-var drawTable = TC.drawTable;
+var TextCell = dt.TextCell;
+var drawTable = dt.drawTable;
 
 function checkerboard() {
   var rows = [];
@@ -60,7 +58,7 @@ var expectedCheckerboard =
 ##    ##    ##`;
 describe("drawTable", function() {
   it("must draw the checkerboard correctly", function() {
-    //drawTable(checkerboard()).should.match(/^(([# ]{2}(\s|$)){5}){5}$/);
-     drawTable(checkerboard()).should.equal(expectedCheckerboard);
+    /* There are 5 columns and 5 rows and a white space between columns*/
+    drawTable(checkerboard()).should.match(/^(([# ]{2}(\s|$)){5}){5}$/);
   })
 });

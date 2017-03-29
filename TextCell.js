@@ -11,11 +11,11 @@ class TextCell {
         }, 0);
     }
     
-    minHeight = function() {
+    minHeigh() {
         return this.text.length;
     }
     
-    draw = function(width, height) {
+    draw(width, height) {
         var result = [0,height].range((i)=>i).map(
             (i) => {
             var line = this.text[i] || "";

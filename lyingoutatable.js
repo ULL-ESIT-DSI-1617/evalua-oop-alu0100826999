@@ -1,5 +1,3 @@
-
-
 var TextCell_ = require ('./TextCell.js')
 var TextCell = TextCell_.TextCell
 

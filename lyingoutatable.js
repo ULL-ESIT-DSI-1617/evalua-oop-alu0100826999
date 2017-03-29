@@ -1,3 +1,14 @@
+
+
+var TextCell_ = require ('./TextCell.js')
+var TextCell = TextCell_.TextCell
+
+var UnderlinedCell_ = require('./UnderlinedCell.js')
+var UnderlinedCell = UnderlinedCell_.UnderlinedCell
+
+var RTextCell_ = require('./RTextCell.js')
+var RTextCell = RTextCell_.RTextCell
+
 // Utils: Monkey Patching
 String.prototype.repeat = function(times) {
   var result = "";

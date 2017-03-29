@@ -1,7 +1,7 @@
 "use strict"
 
 class UnderlinedCell {
-    constructor(inner) {
+    constructor(inner) {    //inner: celda dentro de celda
         this.inner = inner;
     }
     

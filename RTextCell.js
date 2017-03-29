@@ -1,6 +1,7 @@
 "use strict"
 
-var TextCell = require ('./TextCell.js')
+var TextCell_ = require ('./TextCell.js')
+var TextCell = TextCell_.TextCell
 
 class RTextCell extends TextCell{
     constructor(text) {

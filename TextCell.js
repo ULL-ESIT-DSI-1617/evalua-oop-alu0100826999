@@ -1,7 +1,5 @@
 "use strict"
 
-
-
 class TextCell {
     constructor(text) {
         this.text = text.split("\n");
